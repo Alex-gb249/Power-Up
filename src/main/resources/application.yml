@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/restaurant
+    username: root
+    password: ${password}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+appDescription: "Restaurant project for Pragma PowerUp"
+appVersion: "1.0.0"
