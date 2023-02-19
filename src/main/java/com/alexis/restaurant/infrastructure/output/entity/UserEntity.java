@@ -27,7 +27,6 @@ public class UserEntity {
     private String email;
     @Column(nullable = false)
     private String password;
-    @Column(nullable = false)
-    @ManyToOne(optional = false, cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @ManyToOne(optional = false, fetch = FetchType.EAGER)
     private RoleEntity role;
 }
